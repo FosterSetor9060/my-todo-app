@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #fce4ec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.content-container {
+  width: 100%;
+  max-width: 700px;
+  padding: 20px;
+}
+
+.todo-list-container {
+  background: linear-gradient(to bottom right, #eaf4ff, #c7e0ff);
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.todo-list-container h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.todo-list-container h3 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+#todo-list {
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* ✅ Consistent Class Name */
+.todo-list-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: white;
+  border-radius: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.todo-list-item label {
+  flex-grow: 1;
+  margin-left: 10px;
+}
+
+/* Add-todo box layout */
+.add-todo-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#new-todo {
+  flex-grow: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  font-size: 16px;
+}
+
+#new-todo:focus {
+  border-color: #007bff;
+}
+
+/* Add button */
+#add-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background 0.3s ease;
+}
+
+#add-button:hover {
+  background-color: #0056b3;
+}
+
+/* Icons */
+.todo-actions {
+  display: flex;
+  align-items: center;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+  margin-left: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1);
+}
+
+/* Completed tasks */
+.todo-list-completed label {
+  text-decoration: line-through;
+  color: #888;
+}

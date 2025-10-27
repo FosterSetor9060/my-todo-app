@@ -2,9 +2,8 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="wid, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
     <title>Todo List</title>
   </head>
   <body>
@@ -15,11 +14,12 @@
           <input type="text" id="new-todo" placeholder="Add a new task" />
           <button id="add-button">Add</button>
         </div>
+
         <h3>Todo List</h3>
-        <ul id="to-list">
-          <li class="todo-list-completed">
+        <ul id="todo-list">
+          <li class="todo-list-item todo-list-completed">
             <input type="checkbox" checked />
-            <label> Buy groceries</label>
+            <label>Buy groceries</label>
             <div class="todo-actions">
               <div class="icon edit-icon">
                 <img src="edit.svg" alt="Edit" />
@@ -29,9 +29,9 @@
               </div>
             </div>
           </li>
-          <li class="todo-list-completed">
+          <li class="todo-list-item todo-list-completed">
             <input type="checkbox" checked />
-            <label> Walk the dog</label>
+            <label>Walk the dog</label>
             <div class="todo-actions">
               <div class="icon edit-icon">
                 <img src="edit.svg" alt="Edit" />
@@ -44,5 +44,6 @@
         </ul>
       </div>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>
